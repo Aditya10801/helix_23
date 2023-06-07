@@ -1,0 +1,531 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="icon" type="image/x-icon" href="favicon.ico">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,400&display=swap" rel="stylesheet">
+    <title>Helix | Home</title>
+   <Script> // Function to detect if the user is on a mobile device
+    function isMobileDevice() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+    
+    // Redirect if the user is on a mobile device
+    if (isMobileDevice()) {
+      window.location.href = "mobile.html"; // Replace with your desired mobile page URL
+    }
+</Script>
+<style>
+    body{
+        overflow-x: hidden;
+    }
+</style>
+</head>
+
+<body style="font-family: 'Satoshi', sans-serif;">
+    <div
+        class="h-screen w-screen bg-cover  bg-[url('https://images.unsplash.com/photo-1628818144466-856f7d477125?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80')]">
+        <section class="h-screen w-screen backdrop-blur-3xl">
+            <section>
+                <header class=" ">
+                    <nav class="absolute z-10 w-full">
+                        <div class="container mx-auto px-8 md:px-12 lg:px-6">
+                            <div
+                                class="relative flex flex-wrap items-center justify-between gap-6 py-2 md:gap-0 md:py-4">
+                                <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav"
+                                    class="peer hidden" />
+                                <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
+                                    <a href="#" aria-label="logo" class="flex items-center space-x-2">
+
+                                   <img src="logo.png" class="w-20">     
+                                    </a>
+                                    <div class="relative flex max-h-10 items-center lg:hidden">
+                                        <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger"
+                                            class="relative -mr-6 p-6">
+                                            <div aria-hidden="true" id="line"
+                                                class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 ">
+                                            </div>
+                                            <div aria-hidden="true" id="line2"
+                                                class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 ">
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <label aria-hidden="true" for="toggle_nav"
+                                    class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 peer-checked:origin-top peer-checked:scale-y-100  lg:hidden"></label>
+                                <div
+                                    class="invisible absolute top-full left-0 z-20 w-full origin-top translate-y-1 scale-95 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-gray-800 p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 peer-checked:visible peer-checked:scale-100 peer-checked:opacity-100  lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0">
+                                    <div class="w-full text-gray-100  lg:w-auto lg:pr-4 lg:pt-0">
+                                        <ul
+                                            class="flex text-2xl flex-col gap-6 font-medium tracking-wide lg:flex-row lg:gap-0 lg:text-sm">
+                                            <li>
+                                                <a href="#home"
+                                                    class="block transition  text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
+                                                    <span>Home</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#about"
+                                                    class="block transition text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
+                                                    <span>About</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#events"
+                                                    class="block transition text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
+                                                    <span>Events</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#team"
+                                                    class="block transition text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
+                                                    <span>Team</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#contact"
+                                                    class="block transition  text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
+                                                    <span>Contact</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </section>
+            <div class="flex flex-cols justify-center items-center h-[40vw] lg:md:mt-0 mt-32 home" id="home">
+                <div class="grid grid-rows  gap-12">
+                    <div class="lg:md:text-6xl  text-3xl text-white font-bold text-center" data-aos="fade-up"> Unlock the <br><span
+                            class="" data-aos="fade-up">mysteries of science with</span>
+                        <br><span class="lg:md:text-8xl text-5xl" data-aos="fade-up"><i>Helix</i>.</span>
+                    </div>
+                    <div
+                        class="text-xl text-gray-300 text-justify w-[30vw] lg:md:right-20 lg:md:absolute lg:md:bottom-20" data-aos="fade-up">
+                        Helix is a community of curious students, teachers, and parents who come together to explore the
+                        wonders of science. From hands-on experiments to engaging workshops, there's something for
+                        everyone at Helix. Join us on this exciting journey today !</div>
+
+                    <div class="text-xl text-gray-300 text-justify w-[30vw] left-20 absolute bottom-20" data-aos="fade-up">
+                        Join the Helix science club and explore the wonders of chemistry, physics, biology, and more.
+                        Our team of expert teachers will guide you through exciting experiments and activities that will
+                        inspire a lifelong love for science.</div>
+
+                </div>
+
+
+
+            </div>
+        </section>
+        <section class="h-3/4 w-screen bg-[#edf2f4] about" id="about">
+            <div class="flex flex-cols justify-center items-center h-full p-20 gap-40">
+                <img data-aos="fade-right" src="https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    class="h-[50vh] rounded-3xl">
+                <div>
+                    <div class="text-4xl  grid gap-10" data-aos="fade-left"><span class="font-bold">Unlock the Wonders of Science with
+                            Helix.</span>
+                        <span class="text-xl text-gray-500">
+                            Helix is where young minds get to explore and experiment with science in a fun and engaging
+                            way. Our club is dedicated to fostering curiosity, critical thinking, and problem-solving
+                            skills among students. With hands-on activities, workshops and competitions, Helix provides
+                            an enriching experience for science enthusiasts at Delhi Public School Rohini.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <Section class=" bg-[#edf2f4] ">
+            <h1 class="text-9xl font-bold p-10 events_header" id="events" data-aos="fade-right">Events.</h1>
+
+            <div class="grid grid-cols-2 grid-rows-5 px-10 gap-10 events">
+                <div
+                    class="relative flex items-start justify-between rounded-xl border border-gray-200 p-4 shadow-md sm:p-6 lg:p-8 h-60" data-aos="zoom-in-up">
+                    <div class="pt-4 text-gray-500" >
+
+
+                        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
+                            Failing Physics!
+                        </h3>
+
+                        <p class="mt-2 hidden text-sm sm:block">
+                            Play your fav Marvel or DC movie and explain how what's shown is impossible in real life &
+                            fails the laws of physics.
+                        </p>
+                    </div>
+
+                    <span class="rounded-full  bg-green-200 px-3 py-1.5 text-xs font-medium text-green-600">
+                        Physics
+                    </span>
+
+                    &nbsp;
+                    <span
+                        class="rounded-full w-[17rem] bottom-5 right-5  absolute bg-blue-200 px-3 py-1.5 text-xs font-medium text-blue-600">
+                        Event Heads : Anirudh Dabas, Arnav Bhargava
+                    </span>
+                </div>
+
+                <div
+                    class="relative flex items-start justify-between rounded-xl border border-gray-200 p-4 shadow-md sm:p-6 lg:p-8 h-60" data-aos="zoom-in-up">
+                    <div class="pt-4 text-gray-500" >
+
+
+                        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
+                            Toycathon
+                        </h3>
+
+                        <p class="mt-2 hidden text-sm sm:block">
+                            Craft exciting toys & fun games based over scientific principles and explain their
+                            functionality in science terminologies.
+                        </p>
+                    </div>
+
+                    <span class="rounded-full  bg-green-200 px-3 py-1.5 text-xs font-medium text-green-600">
+                        Physics
+                    </span>
+
+                    &nbsp;
+                    <span
+                        class="rounded-full w-[17rem] bottom-5 right-5  absolute bg-blue-200 px-3 py-1.5 text-xs font-medium text-blue-600">
+                        Event Heads : Garvit Mittal, Parin Arora
+                    </span>
+                </div>
+
+                <div
+                    class="relative flex items-start justify-between rounded-xl border border-gray-200 p-4 shadow-md sm:p-6 lg:p-8 h-60" data-aos="zoom-in-up">
+                    <div class="pt-4 text-gray-500" >
+
+
+                        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
+                            I Know It Better:
+                        </h3>
+
+                        <p class="mt-2 hidden text-sm sm:block">
+
+                           
+Students form groups of 2 to debate the accuracy of theoretical physical laws. They argue for and against a chosen topic from a list, and the most convincing team wins.
+                        </p>
+                    </div>
+
+                    <span class="rounded-full  bg-green-200 px-3 py-1.5 text-xs font-medium text-green-600">
+                        Physics
+                    </span>
+
+                    &nbsp;
+                    <span
+                        class="rounded-full w-[17rem] bottom-5 right-5  absolute bg-blue-200 px-3 py-1.5 text-xs font-medium text-blue-600">
+                        Event Heads : Aadi Chhabra, Shaurya Gupta
+                    </span>
+                </div>
+
+                <div
+                    class="relative flex items-start justify-between rounded-xl border border-gray-200 p-4 shadow-md sm:p-6 lg:p-8 h-60" data-aos="zoom-in-up">
+                    <div class="pt-4 text-gray-500" >
+
+
+                        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
+                            The next Wright:
+                        </h3>
+
+                        <p class="mt-2 hidden text-sm sm:block">
+
+                            Students design and explain paper planes for a distance flying competition, judged on flight distance and explanation quality.
+                        </p>
+                    </div>
+
+                    <span class="rounded-full  bg-green-200 px-3 py-1.5 text-xs font-medium text-green-600">
+                        Physics
+                    </span>
+
+                    &nbsp;
+                    <span
+                        class="rounded-full w-[17rem] bottom-5 right-5  absolute bg-blue-200 px-3 py-1.5 text-xs font-medium text-blue-600">
+                        Event Heads : Bhavya Arora, Krishiv
+                    </span>
+                </div>
+
+                <div
+                    class="relative flex items-start justify-between rounded-xl border border-gray-200 p-4 shadow-md sm:p-6 lg:p-8 h-60" data-aos="zoom-in-up">
+                    <div class="pt-4 text-gray-500" >
+
+
+                        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
+                            Chematize
+                        </h3>
+
+                        <p class="mt-2 hidden text-sm sm:block">
+                            Dramatize & present a theatrical display on the chemistry concept of your liking using
+                            dance, musical instruments and what not.
+                        </p>
+                    </div>
+
+                    <span class="rounded-full  bg-green-200 px-3 py-1.5 text-xs font-medium text-green-600">
+                        Chemistry
+                    </span>
+
+                    &nbsp;
+                    <span
+                        class="rounded-full w-[17rem] bottom-5 right-5  absolute bg-blue-200 px-3 py-1.5 text-xs font-medium text-blue-600">
+                        Event Heads : Aanya Kaushik, Avni Tiwari
+                    </span>
+                </div>
+
+                <div
+                    class="relative flex items-start justify-between rounded-xl border border-gray-200 p-4 shadow-md sm:p-6 lg:p-8 h-60" data-aos="zoom-in-up">
+                    <div class="pt-4 text-gray-500" >
+
+
+                        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
+                            Hydro-Model
+                        </h3>
+
+                        <p class="mt-2 hidden text-sm sm:block">
+                            Prepare and assemble real-life models of hydrocarbons while telling interesting facts about
+                            those species.
+                        </p>
+                    </div>
+
+                    <span class="rounded-full  bg-green-200 px-3 py-1.5 text-xs font-medium text-green-600">
+                        Chemistry
+                    </span>
+
+                    &nbsp;
+                    <span
+                        class="rounded-full w-[17rem] bottom-5 right-5  absolute bg-blue-200 px-3 py-1.5 text-xs font-medium text-blue-600">
+                        Event Heads : Nimisha, Utsav
+                    </span>
+                </div>
+
+                <div
+                    class="relative flex items-start justify-between rounded-xl border border-gray-200 p-4 shadow-md sm:p-6 lg:p-8 h-60" data-aos="zoom-in-up">
+                    <div class="pt-4 text-gray-500" >
+
+
+                        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
+                            Magical Mania
+                        </h3>
+
+                        <p class="mt-2 hidden text-sm sm:block">
+                            Students use scientific concepts to create a magic show. The participant who successfully combines science and magic to deliver the best performance wins.
+                        </p>
+                    </div>
+
+                    <span class="rounded-full  bg-green-200 px-3 py-1.5 text-xs font-medium text-green-600">
+                        Chemistry
+                    </span>
+
+                    &nbsp;
+                    <span
+                        class="rounded-full w-[17rem] bottom-5 right-5  absolute bg-blue-200 px-3 py-1.5 text-xs font-medium text-blue-600">
+                        Event Heads : Aarav Dua, Tejas
+                    </span>
+                </div>
+
+                <div
+                    class="relative flex items-start justify-between rounded-xl border border-gray-200 p-4 shadow-md sm:p-6 lg:p-8 h-60" data-aos="zoom-in-up">
+                    <div class="pt-4 text-gray-500" >
+
+
+                        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
+                            Nature Hunt:
+                        </h3>
+
+                        <p class="mt-2 hidden text-sm sm:block">
+                            Students form teams to participate in a nature exploration challenge. They follow a series of clues leading to a final plant. The first team to reach the final plant wins
+                        </p>
+                    </div>
+
+                    <span class="rounded-full  bg-green-200 px-3 py-1.5 text-xs font-medium text-green-600">
+                        Biology
+                    </span>
+
+                    &nbsp;
+                    <span
+                        class="rounded-full w-[17rem] bottom-5 right-5  absolute bg-blue-200 px-3 py-1.5 text-xs font-medium text-blue-600">
+                        Event Heads : Ishaan Dudeja
+                        , Divyaan Gupta
+                    </span>
+                </div>
+
+                <div
+                    class="relative flex items-start justify-between rounded-xl border border-gray-200 p-4 shadow-md sm:p-6 lg:p-8 h-60" data-aos="zoom-in-up">
+                    <div class="pt-4 text-gray-500" >
+
+
+                        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
+                            Deadly Creations!
+                        </h3>
+
+                        <p class="mt-2 hidden text-sm sm:block">
+                            Create your own micro-orgnism or virus that may start another deadly pandemic or even act as
+                            a life-saving antitode the fate of the world now
+                            rests in your hands
+                        </p>
+                    </div>
+
+                    <span class="rounded-full  bg-green-200 px-3 py-1.5 text-xs font-medium text-green-600">
+                        Biology
+                    </span>
+
+                    &nbsp;
+                    <span
+                        class="rounded-full w-[17rem] bottom-5 right-5  absolute bg-blue-200 px-3 py-1.5 text-xs font-medium text-blue-600">
+                        Event Heads : Ishita, Riddhima
+
+                    </span>
+                </div>
+                <div
+                    class="relative flex items-start justify-between rounded-xl border border-gray-200 p-4 shadow-md sm:p-6 lg:p-8 h-60" data-aos="zoom-in-up">
+                    <div class="pt-4 text-gray-500">
+
+
+                        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
+                            Infocon
+                        </h3>
+
+                        <p class="mt-2 hidden text-sm sm:block">
+                            Be innovative and engineer an attractive Infographic on the topic of your choice
+                            whose design is informative as well as interesting.
+                        </p>
+                    </div>
+
+                    <span class="rounded-full  bg-green-200 px-3 py-1.5 text-xs font-medium text-green-600">
+                        Biology
+                    </span>
+                    &nbsp;
+                    <span
+                        class="rounded-full w-[17rem] bottom-5 right-5  absolute bg-blue-200 px-3 py-1.5 text-xs font-medium text-blue-600">
+                        Event Heads : Vrinda Shandiliya, Setuja Gupta
+                    </span>
+
+                </div>
+            </div>
+    
+    </Section>
+    <section class=" w-screen bg-[#edf2f4] p-5 " id="team">
+        <h1 class="text-9xl font-bold text-right p-10 events_header">Team.</h1>
+
+     <div class="flex flex-cols justify-center items-center">
+                 <div class="flex flex-col justify-center m-8 text-center" data-aos="zoom-out">
+                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/SMN.jpeg">
+                        <p class="text-xl font-semibold leading-tight">Shaurya Mittal Nair</p>
+                        <p class="text-gray-600">Director</p>
+                    </div>
+                    <div class="flex flex-col justify-center m-8 text-center" data-aos="zoom-out">
+                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/Aryan.jpeg">
+                        <p class="text-xl font-semibold leading-tight">Aryan Bansal</p>
+                        <p class="text-gray-600">Director</p>
+                    </div>
+                </div> 
+                <div class="grid  grid-cols-5  justify-center items-center" data-aos="zoom-out">
+                     <div class="flex flex-col justify-center m-8 text-center">
+                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/Shauryaa.jpeg">
+                        <p class="text-xl font-semibold leading-tight">Shauryaa Arora</p>
+                        <p class="text-gray-600">HoD Chemistry</p>
+                    </div>
+                    <div class="flex flex-col justify-center m-8 text-center" data-aos="zoom-out">
+                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/Mahir.jpeg">
+                        <p class="text-xl font-semibold leading-tight">Mahir Khanna</p>
+                        <p class="text-gray-600">HoD Biology</p>
+                    </div>
+                    <div class="flex flex-col justify-center m-8 text-center" data-aos="zoom-out">
+                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/Parth.jpeg">
+                        <p class="text-xl font-semibold leading-tight">Parth Mittal</p>
+                        <p class="text-gray-600">HoD Physics</p>
+                    </div>
+                    <div class="flex flex-col justify-center m-8 text-center" data-aos="zoom-out">
+                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/Aditya.png">
+                        <p class="text-xl font-semibold leading-tight">Aditya Madan</p>
+                        <p class="text-gray-600">Technology Head</p>
+                    </div>
+                    <div class="flex flex-col justify-center m-8 text-center" data-aos="zoom-out">
+                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/Kriti.jpeg">
+                        <p class="text-xl font-semibold leading-tight">Kriti Grover</p>
+                        <p class="text-gray-600">Design Head</p>
+                    </div>
+                    </div>
+                    <div class="flex flex-cols-2 justify-center items-center" data-aos="zoom-out">
+                    <div class="flex flex-col justify-center m-8 text-center">
+                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/AdityaP.jpeg">
+                        <p class="text-xl font-semibold leading-tight">Aditya Prasad</p>
+                        <p class="text-gray-600">Executive Head</p> 
+                    </div>
+                    <div class="flex flex-col justify-center m-8 text-center" data-aos="zoom-out">
+                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/Aurum.png">
+                        <p class="text-xl font-semibold leading-tight">Aurum Mandal</p>
+                        <p class="text-gray-600">Management Head</p>
+                    </div>
+                    </div>
+
+                    
+
+
+<div class="flex min-h-screen items-center justify-start bg-[#edf2f4]" id="contact" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
+    <div class="mx-auto w-full max-w-lg">
+      <h1 class="text-4xl font-medium">Contact us</h1>
+      <p class="mt-3">Email us at helixdpsr2@gmail.com or message us here:</p>
+  
+      <form action="https://api.web3forms.com/submit" method="POST" class="mt-10">
+      
+    
+        <input type="hidden" name="access_key" value="9f285cbd-b151-41d0-8651-6715539a670b" /> 
+        <div class="grid gap-6 sm:grid-cols-2">
+          <div class="relative z-0">
+            <input type="text" name="name" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+            <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your name</label>
+          </div>
+          <div class="relative z-0">
+            <input type="text" name="email" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+            <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your email</label>
+          </div>
+          <div class="relative z-0 col-span-2">
+            <textarea name="message" rows="5" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" "></textarea>
+            <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your message</label>
+          </div>
+        </div>
+        <button type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+                   <footer class="bg-[#edf2f4] text-gray-900">
+	<div class="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row divide-gray-600">
+		<ul class="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
+			&copy; Helix 2023
+		</ul>
+		<div class="flex flex-col justify-center pt-6 lg:pt-0">
+			<div class="flex justify-center space-x-4">
+				<a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/helix.dpsr/" title="Instagram" class="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-blue-600 text-gray-50">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="w-4 h-4">
+						<path d="M16 0c-4.349 0-4.891 0.021-6.593 0.093-1.709 0.084-2.865 0.349-3.885 0.745-1.052 0.412-1.948 0.959-2.833 1.849-0.891 0.885-1.443 1.781-1.849 2.833-0.396 1.020-0.661 2.176-0.745 3.885-0.077 1.703-0.093 2.244-0.093 6.593s0.021 4.891 0.093 6.593c0.084 1.704 0.349 2.865 0.745 3.885 0.412 1.052 0.959 1.948 1.849 2.833 0.885 0.891 1.781 1.443 2.833 1.849 1.020 0.391 2.181 0.661 3.885 0.745 1.703 0.077 2.244 0.093 6.593 0.093s4.891-0.021 6.593-0.093c1.704-0.084 2.865-0.355 3.885-0.745 1.052-0.412 1.948-0.959 2.833-1.849 0.891-0.885 1.443-1.776 1.849-2.833 0.391-1.020 0.661-2.181 0.745-3.885 0.077-1.703 0.093-2.244 0.093-6.593s-0.021-4.891-0.093-6.593c-0.084-1.704-0.355-2.871-0.745-3.885-0.412-1.052-0.959-1.948-1.849-2.833-0.885-0.891-1.776-1.443-2.833-1.849-1.020-0.396-2.181-0.661-3.885-0.745-1.703-0.077-2.244-0.093-6.593-0.093zM16 2.88c4.271 0 4.781 0.021 6.469 0.093 1.557 0.073 2.405 0.333 2.968 0.553 0.751 0.291 1.276 0.635 1.844 1.197 0.557 0.557 0.901 1.088 1.192 1.839 0.22 0.563 0.48 1.411 0.553 2.968 0.072 1.688 0.093 2.199 0.093 6.469s-0.021 4.781-0.099 6.469c-0.084 1.557-0.344 2.405-0.563 2.968-0.303 0.751-0.641 1.276-1.199 1.844-0.563 0.557-1.099 0.901-1.844 1.192-0.556 0.22-1.416 0.48-2.979 0.553-1.697 0.072-2.197 0.093-6.479 0.093s-4.781-0.021-6.48-0.099c-1.557-0.084-2.416-0.344-2.979-0.563-0.76-0.303-1.281-0.641-1.839-1.199-0.563-0.563-0.921-1.099-1.197-1.844-0.224-0.556-0.48-1.416-0.563-2.979-0.057-1.677-0.084-2.197-0.084-6.459 0-4.26 0.027-4.781 0.084-6.479 0.083-1.563 0.339-2.421 0.563-2.979 0.276-0.761 0.635-1.281 1.197-1.844 0.557-0.557 1.079-0.917 1.839-1.199 0.563-0.219 1.401-0.479 2.964-0.557 1.697-0.061 2.197-0.083 6.473-0.083zM16 7.787c-4.541 0-8.213 3.677-8.213 8.213 0 4.541 3.677 8.213 8.213 8.213 4.541 0 8.213-3.677 8.213-8.213 0-4.541-3.677-8.213-8.213-8.213zM16 21.333c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333c2.948 0 5.333 2.385 5.333 5.333s-2.385 5.333-5.333 5.333zM26.464 7.459c0 1.063-0.865 1.921-1.923 1.921-1.063 0-1.921-0.859-1.921-1.921 0-1.057 0.864-1.917 1.921-1.917s1.923 0.86 1.923 1.917z"></path>
+					</svg>
+				</a>
+				
+			</div>
+		</div>
+	</div>
+</footer>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+
+</body>
+<script>
+  AOS.init();
+</script>
+
+</html>
