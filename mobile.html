@@ -1,489 +1,489 @@
 <!doctype html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@700&family=Prompt&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   <script src="https://unpkg.com/scrollreveal"></script>
-   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,400&display=swap" rel="stylesheet">
-    <style>
-       body{
-        overflow-x: hidden;
-       }
-    </style>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@700&family=Prompt&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+  </style>
 </head>
 <!-- lg:md: -->
+
 <body class="bg-[#E8E9F3] " style="font-family: 'Prompt', sans-serif;">
-    <div
-    class="h-screen w-screen  bg-[url('./images/image.png')]">
-<section class="h-screen w-screen backdrop-blur-3xl">
-    <section>
+  <div class="h-screen w-screen  bg-[url('./images/image.png')]">
+    <section class="h-screen w-screen backdrop-blur-3xl">
+      <section>
         <header class=" ">
-            <nav class="absolute z-10 w-full">
-                <div class="container mx-auto px-8 md:px-12 lg:px-6">
-                    <div
-                        class="relative flex flex-wrap items-center justify-between gap-6 py-2 md:gap-0 md:py-4">
-                        <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav"
-                            class="peer hidden" />
-                        <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
-                            <a href="#" aria-label="logo" class="flex items-center space-x-2">
+          <nav class="absolute z-10 w-full">
+            <div class="container mx-auto px-8 md:px-12 lg:px-6">
+              <div class="relative flex flex-wrap items-center justify-between gap-6 py-2 md:gap-0 md:py-4">
+                <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" class="peer hidden" />
+                <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
+                  <a href="#" aria-label="logo" class="flex items-center space-x-2">
 
-                           <img src="logo.png" class="w-20">     
-                            </a>
-                            <div class="relative flex max-h-10 items-center lg:hidden">
-                                <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger"
-                                    class="relative -mr-6 p-3 bg-white rounded-full">
-                                    <div aria-hidden="true" id="line"
-                                        class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 ">
-                                    </div>
-                                    <div aria-hidden="true" id="line2"
-                                        class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 ">
-                                    </div>
-                                </label>
-                            </div>
-                        </div>
-                        <label aria-hidden="true" for="toggle_nav"
-                            class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 peer-checked:origin-top peer-checked:scale-y-100  lg:hidden"></label>
-                        <div
-                            class="invisible absolute top-full left-0 z-20 w-full origin-top translate-y-1 scale-95 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-gray-800 p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 peer-checked:visible peer-checked:scale-100 peer-checked:opacity-100  lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0">
-                            <div class="w-full text-gray-100  lg:w-auto lg:pr-4 lg:pt-0">
-                                <ul
-                                    class="flex text-2xl flex-col gap-6 font-medium tracking-wide lg:flex-row lg:gap-0 lg:text-sm">
-                                    <li>
-                                        <a href="#home"
-                                            class="block transition  text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
-                                            <span>Home</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#about"
-                                            class="block transition text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
-                                            <span>About</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#events"
-                                            class="block transition text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
-                                            <span>Events</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#team"
-                                            class="block transition text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
-                                            <span>Team</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#contact"
-                                            class="block transition  text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
-                                            <span>Contact</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-
-                        </div>
-                    </div>
+                    <img src="logo.png" class="w-20">
+                  </a>
+                  <div class="relative flex max-h-10 items-center lg:hidden">
+                    <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger"
+                      class="relative -mr-6 p-3 bg-white rounded-full">
+                      <div aria-hidden="true" id="line"
+                        class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 ">
+                      </div>
+                      <div aria-hidden="true" id="line2"
+                        class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 ">
+                      </div>
+                    </label>
+                  </div>
                 </div>
-            </nav>
+                <label aria-hidden="true" for="toggle_nav"
+                  class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 peer-checked:origin-top peer-checked:scale-y-100  lg:hidden"></label>
+                <div
+                  class="invisible absolute top-full left-0 z-20 w-full origin-top translate-y-1 scale-95 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-gray-800 p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 peer-checked:visible peer-checked:scale-100 peer-checked:opacity-100  lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0">
+                  <div class="w-full text-gray-100  lg:w-auto lg:pr-4 lg:pt-0">
+                    <ul class="flex text-2xl flex-col gap-6 font-medium tracking-wide lg:flex-row lg:gap-0 lg:text-sm">
+                      <li>
+                        <a href="#home"
+                          class="block transition  text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
+                          <span>Home</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#about"
+                          class="block transition text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
+                          <span>About</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#events"
+                          class="block transition text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
+                          <span>Events</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#team"
+                          class="block transition text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
+                          <span>Team</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#contact"
+                          class="block transition  text-2xl hover:underline underline-offset-4 hover:text-primary md:px-4">
+                          <span>Contact</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </nav>
         </header>
+      </section>
+
+
+      <div class="flex flex-cols  justify-center items-center p-5 text-center h-screen text-white text-6xl"
+        data-aos="zoom-in">
+        <div class='grid'>
+          <div class='flex flex-cols justify-center items-center'><img src="./images/rocket.png" class="w-20 "></div>
+          <h1 class="text-center text-white text-9xl">Helix</h1>
+          <h1 class="text-center text-white text-3xl">It's not rocket science</h1>
+        </div>
+    </section>
+    <section class="w-screen mt-10 p-5 text-justify" id="about" data-aos="zoom-in-down">
+      <div class="text-center text-5xl font-bold " data-aos="fade-up" data-aos-anchor-placement="center-center">About
+        Us.</div>
+      <div class=" text-gray-600 text-3xl mt-5">
+        <p class="text-center italic" data-aos="fade-up" data-aos-anchor-placement="center-center">“Science is a way of
+          thinking, much more than it is a body of knowledge”.</p>
+        <p class="text-justify mt-5 text-xl p-5" data-aos="fade-up" data-aos-anchor-placement="center-center">HELIX is
+          the student-run Science club of DPS Rohini founded by Aryan Bansal and Shaurya Mittal.
+          Through this club, we aim to feed the sparkling curiosity in students about the application of
+          science in the amazing world out there. We aspire to demonstrate the practicality of
+          concepts through our enlivening events. Nevertheless, we also hope to upskill teamwork and synergy amongst
+          these young learners, thus
+          inculcating a sense of professionalism in them.</p>
+      </div>
+      <div class='flex flex-cols justify-center items-center mt-5'>
+        <div class="grid gap-5">
+          <img src="image 1.jpeg" class="w-[300px] h-[200px]" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-delay="300" data-aos-offset="0">
+          <img src="image 2.jpeg" class="w-[300px] h-[200px]" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-delay="300" data-aos-offset="0">
+          <img src="image 3.jpeg" class="w-[300px] h-[200px]" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-delay="300" data-aos-offset="0">
+          <img src="image 4.jpeg" class="w-[300px] h-[200px]" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-delay="300" data-aos-offset="0">
+        </div>
+      </div>
+    </section>
+    <section class="w-screen p-5" id="events">
+      <h1 class="text-8xl font-bold text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Events.</h1>
+      <div class="grid grid-rows gap-5">
+
+
+        <article
+          class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+          data-aos="fade-down">
+          <div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
+
+
+            <a href="./event_pages/failing_physics.html">
+              <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
+                Failing Physics !
+              </h3>
+            </a>
+
+            <div class="mt-4 flex flex-wrap gap-1">
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                Physics
+              </span>
+
+
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+          data-aos="fade-down">
+          <div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
+
+
+            <a href="./event_pages/toycathon.html">
+              <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
+                Toycathon
+              </h3>
+            </a>
+
+            <div class="mt-4 flex flex-wrap gap-1">
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                Physics
+              </span>
+
+
+            </div>
+          </div>
+        </article>
+        <article
+          class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+          data-aos="fade-down">
+          <div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
+
+
+            <a href="./event_pages/i_know_it_better.html">
+              <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
+                I know it better
+              </h3>
+            </a>
+
+            <div class="mt-4 flex flex-wrap gap-1">
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                Physics
+              </span>
+
+
+            </div>
+          </div>
+        </article>
+        <article
+          class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+          data-aos="fade-down">
+          <div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
+
+
+            <a href="./event_pages/the_next_Wright.html">
+              <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
+                The Next Wright
+              </h3>
+            </a>
+
+            <div class="mt-4 flex flex-wrap gap-1">
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                Physics
+              </span>
+
+
+            </div>
+          </div>
+        </article>
+        <article
+          class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+          data-aos="fade-down">
+          <div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
+
+
+            <a href="./event_pages/chematize.html">
+              <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
+                Chematize
+              </h3>
+            </a>
+
+            <div class="mt-4 flex flex-wrap gap-1">
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                Chemistry
+              </span>
+
+
+            </div>
+          </div>
+        </article>
+        <article
+          class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+          data-aos="fade-down">
+          <div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
+
+
+            <a href="./event_pages/hydro_model.html">
+              <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
+                Hydro-Model
+              </h3>
+            </a>
+
+            <div class="mt-4 flex flex-wrap gap-1">
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                Chemistry
+              </span>
+
+
+            </div>
+          </div>
+        </article>
+        <article
+          class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+          data-aos="fade-down">
+          <div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
+
+
+            <a href="./event_pages/magical_mania.html">
+              <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
+                Magical Mania
+              </h3>
+            </a>
+
+            <div class="mt-4 flex flex-wrap gap-1">
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                Chemistry
+              </span>
+
+
+            </div>
+          </div>
+        </article>
+        <article
+          class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+          data-aos="fade-down">
+          <div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
+
+
+            <a href="./event_pages/nature_hunt.html">
+              <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
+                Nature Hunt
+              </h3>
+            </a>
+
+            <div class="mt-4 flex flex-wrap gap-1">
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                Biology
+              </span>
+
+
+            </div>
+          </div>
+        </article>
+        <article
+          class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+          data-aos="fade-down">
+          <div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
+
+
+            <a href="./event_pages/deadly_Creation.html">
+              <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
+                Deadly Creation
+              </h3>
+            </a>
+
+            <div class="mt-4 flex flex-wrap gap-1">
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                Biology
+              </span>
+
+
+            </div>
+          </div>
+        </article>
+        <article
+          class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm"
+          data-aos="fade-down">
+          <div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
+
+
+            <a href="./event_pages/infocon.html">
+              <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
+                Infocon
+              </h3>
+            </a>
+
+            <div class="mt-4 flex flex-wrap gap-1">
+              <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                Biology
+              </span>
+
+
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
+    <div class="w-screen p-5">
+      <h1 class="text-8xl font-bold text-center">Team.</h1>
+      <div class="grid grid-cols-2 grid-rows">
+        <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right">
+          <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500"
+            src="./images_Team/SMN.jpeg">
+          <p class="text-xl font-semibold leading-tight">Shaurya Mittal Nair</p>
+          <p class="text-gray-600">Director</p>
+        </div>
+        <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right">
+          <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500"
+            src="./images_Team/Aryan.jpeg">
+          <p class="text-xl font-semibold leading-tight">Aryan Bansal</p>
+          <p class="text-gray-600">Director</p>
+        </div>
+        <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right">
+          <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500"
+            src="./images_Team/Shauryaa.jpeg">
+          <p class="text-xl font-semibold leading-tight">Shauryaa Arora</p>
+          <p class="text-gray-600">HoD Chemistry</p>
+        </div>
+        <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right">
+          <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500"
+            src="./images_Team/Mahir.jpeg">
+          <p class="text-xl font-semibold leading-tight">Mahir Khanna</p>
+          <p class="text-gray-600">HoD Biology</p>
+        </div>
+        <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right">
+          <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500"
+            src="./images_Team/Parth.jpeg">
+          <p class="text-xl font-semibold leading-tight">Parth Mittal</p>
+          <p class="text-gray-600">HoD Physics</p>
+        </div>
+        <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right">
+          <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500"
+            src="./images_Team/Aditya.jpeg">
+          <p class="text-xl font-semibold leading-tight">Aditya Madan</p>
+          <p class="text-gray-600">Technology Head</p>
+        </div>
+        <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right">
+          <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500"
+            src="./images_Team/Kriti.jpeg">
+          <p class="text-xl font-semibold leading-tight">Kriti Grover</p>
+          <p class="text-gray-600">Design Head</p>
+        </div>
+        <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right">
+          <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500"
+            src="./images_Team/AdityaP.jpeg">
+          <p class="text-xl font-semibold leading-tight">Aditya Prasad</p>
+          <p class="text-gray-600">Executive Head</p>
+        </div>
+      </div>
+      <div class="flex flex-cols-2 justify-center items-center" data-aos="flip-right">
 
-  <div class="flex flex-cols  justify-center items-center p-5 text-center h-screen text-white text-6xl"  data-aos="zoom-in">
-   <div class='grid'>  
-    <div class='flex flex-cols justify-center items-center'><img src="./images/rocket.png" class="w-20 "></div>
-    <h1 class="text-center text-white text-9xl">Helix</h1>
-   <h1 class="text-center text-white text-3xl">It's not rocket science</h1></div>
-</section>
-<section class="w-screen mt-10 p-5 text-justify" id="about" data-aos="zoom-in-down">
-  <div class="text-center text-5xl font-bold " data-aos="fade-up"
-  data-aos-anchor-placement="center-center">About Us.</div>
-  <div class=" text-gray-600 text-3xl mt-5">
-     <p class="text-center italic" data-aos="fade-up"
-     data-aos-anchor-placement="center-center">“Science is a way of thinking, much more than it is a body of knowledge”.</p>
-     <p class="text-justify mt-5 text-xl p-5"  data-aos="fade-up"
-     data-aos-anchor-placement="center-center">HELIX is the student-run Science club of DPS Rohini founded by Aryan Bansal and Shaurya Mittal.
-      Through this club, we aim to feed the sparkling curiosity in students about the application of
-      science in the amazing world out there. We aspire to demonstrate the practicality of
-      concepts through our enlivening events. Nevertheless, we also hope to upskill teamwork and synergy amongst these young learners, thus
-      inculcating a sense of professionalism in them.</p>
-  </div>
-  <div class='flex flex-cols justify-center items-center mt-5'>
-  <div class="grid gap-5">
-    <img src="image 1.jpeg" class="w-[300px] h-[200px]" data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="300"
-                data-aos-offset="0">
-                <img src="image 2.jpeg" class="w-[300px] h-[200px]" data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="300"
-                data-aos-offset="0">
-                <img src="image 3.jpeg" class="w-[300px] h-[200px]" data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="300"
-                data-aos-offset="0">
-                <img src="image 4.jpeg" class="w-[300px] h-[200px]" data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="300"
-                data-aos-offset="0">
-  </div>
-</div>
-</section>
-<section class="w-screen p-5" id="events">
-    <h1 class="text-8xl font-bold text-center" data-aos="fade-up"
-    data-aos-anchor-placement="top-bottom">Events.</h1>
-    <div class="grid grid-rows gap-5">
-       
 
-<article
-class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm" data-aos="fade-down"
->
-<div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
-  
+        <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right">
+          <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500"
+            src="./images_Team/Aurum.png">
+          <p class="text-xl font-semibold leading-tight">Aurum Mandal</p>
+          <p class="text-gray-600">Management Head</p>
+        </div>
+      </div>
+      <div class="flex min-h-screen items-center justify-start p-5 " id="contact"
+        data-aos-anchor-placement="center-bottom">
+        <div class="mx-auto w-full max-w-lg">
+          <h1 class="text-4xl font-medium">Contact us</h1>
+          <p class="mt-3">Email us at helixdpsr2@gmail.com or message us here:</p>
 
-  <a href="./event_pages/failing_physics.html">
-    <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
-      Failing Physics !
-    </h3>
-  </a>
+          <form action="https://api.web3forms.com/submit" method="POST" class="mt-10">
 
-  <div class="mt-4 flex flex-wrap gap-1">
-    <span
-      class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
-    >
-      Physics
-    </span>
 
-     
-  </div>
-</div>
-</article>
+            <input type="hidden" name="access_key" value="9f285cbd-b151-41d0-8651-6715539a670b" />
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div class="relative z-0">
+                <input type="text" name="name"
+                  class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                  placeholder=" " />
+                <label
+                  class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your
+                  name</label>
+              </div>
+              <div class="relative z-0">
+                <input type="text" name="email"
+                  class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                  placeholder=" " />
+                <label
+                  class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your
+                  email</label>
+              </div>
+              <div class="relative z-0 col-span-2">
+                <textarea name="message" rows="5"
+                  class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                  placeholder=" "></textarea>
+                <label
+                  class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your
+                  message</label>
+              </div>
+            </div>
+            <button type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white">Send Message</button>
+          </form>
+        </div>
+      </div>
 
-<article
-class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm" data-aos="fade-down"
->
-<div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
-  
+      <footer class="  text-gray-900">
+        <div class="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row divide-gray-600">
+          <ul
+            class="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
+            &copy; Helix 2023
+          </ul>
+          <div class="flex flex-col justify-center pt-6 lg:pt-0">
+            <div class="flex justify-center space-x-4">
+              <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/helix.dpsr/"
+                title="Instagram"
+                class="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-blue-600 text-gray-50">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="w-4 h-4">
+                  <path
+                    d="M16 0c-4.349 0-4.891 0.021-6.593 0.093-1.709 0.084-2.865 0.349-3.885 0.745-1.052 0.412-1.948 0.959-2.833 1.849-0.891 0.885-1.443 1.781-1.849 2.833-0.396 1.020-0.661 2.176-0.745 3.885-0.077 1.703-0.093 2.244-0.093 6.593s0.021 4.891 0.093 6.593c0.084 1.704 0.349 2.865 0.745 3.885 0.412 1.052 0.959 1.948 1.849 2.833 0.885 0.891 1.781 1.443 2.833 1.849 1.020 0.391 2.181 0.661 3.885 0.745 1.703 0.077 2.244 0.093 6.593 0.093s4.891-0.021 6.593-0.093c1.704-0.084 2.865-0.355 3.885-0.745 1.052-0.412 1.948-0.959 2.833-1.849 0.891-0.885 1.443-1.776 1.849-2.833 0.391-1.020 0.661-2.181 0.745-3.885 0.077-1.703 0.093-2.244 0.093-6.593s-0.021-4.891-0.093-6.593c-0.084-1.704-0.355-2.871-0.745-3.885-0.412-1.052-0.959-1.948-1.849-2.833-0.885-0.891-1.776-1.443-2.833-1.849-1.020-0.396-2.181-0.661-3.885-0.745-1.703-0.077-2.244-0.093-6.593-0.093zM16 2.88c4.271 0 4.781 0.021 6.469 0.093 1.557 0.073 2.405 0.333 2.968 0.553 0.751 0.291 1.276 0.635 1.844 1.197 0.557 0.557 0.901 1.088 1.192 1.839 0.22 0.563 0.48 1.411 0.553 2.968 0.072 1.688 0.093 2.199 0.093 6.469s-0.021 4.781-0.099 6.469c-0.084 1.557-0.344 2.405-0.563 2.968-0.303 0.751-0.641 1.276-1.199 1.844-0.563 0.557-1.099 0.901-1.844 1.192-0.556 0.22-1.416 0.48-2.979 0.553-1.697 0.072-2.197 0.093-6.479 0.093s-4.781-0.021-6.48-0.099c-1.557-0.084-2.416-0.344-2.979-0.563-0.76-0.303-1.281-0.641-1.839-1.199-0.563-0.563-0.921-1.099-1.197-1.844-0.224-0.556-0.48-1.416-0.563-2.979-0.057-1.677-0.084-2.197-0.084-6.459 0-4.26 0.027-4.781 0.084-6.479 0.083-1.563 0.339-2.421 0.563-2.979 0.276-0.761 0.635-1.281 1.197-1.844 0.557-0.557 1.079-0.917 1.839-1.199 0.563-0.219 1.401-0.479 2.964-0.557 1.697-0.061 2.197-0.083 6.473-0.083zM16 7.787c-4.541 0-8.213 3.677-8.213 8.213 0 4.541 3.677 8.213 8.213 8.213 4.541 0 8.213-3.677 8.213-8.213 0-4.541-3.677-8.213-8.213-8.213zM16 21.333c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333c2.948 0 5.333 2.385 5.333 5.333s-2.385 5.333-5.333 5.333zM26.464 7.459c0 1.063-0.865 1.921-1.923 1.921-1.063 0-1.921-0.859-1.921-1.921 0-1.057 0.864-1.917 1.921-1.917s1.923 0.86 1.923 1.917z">
+                  </path>
+                </svg>
+              </a>
 
-  <a href="./event_pages/toycathon.html">
-    <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
-      Toycathon
-    </h3>
-  </a>
-
-  <div class="mt-4 flex flex-wrap gap-1">
-    <span
-      class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
-    >
-      Physics
-    </span>
-
-     
-  </div>
-</div>
-</article>
-<article
-class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm" data-aos="fade-down"
->
-<div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
-  
-
-  <a href="./event_pages/i_know_it_better.html">
-    <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
-      I know it better
-    </h3>
-  </a>
-
-  <div class="mt-4 flex flex-wrap gap-1">
-    <span
-      class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
-    >
-      Physics
-    </span>
-
-     
-  </div>
-</div>
-</article>
-<article
-class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm" data-aos="fade-down"
->
-<div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
-  
-
-  <a href="./event_pages/the_next_Wright.html">
-    <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
-      The Next Wright
-    </h3>
-  </a>
-
-  <div class="mt-4 flex flex-wrap gap-1">
-    <span
-      class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
-    >
-     Physics
-    </span>
-
-     
-  </div>
-</div>
-</article>
-<article
-class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm" data-aos="fade-down"
->
-<div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
-  
-
-  <a href="./event_pages/chematize.html">
-    <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
-      Chematize
-    </h3>
-  </a>
-
-  <div class="mt-4 flex flex-wrap gap-1">
-    <span
-      class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
-    >
-      Chemistry
-    </span>
-
-     
-  </div>
-</div>
-</article>
-<article
-class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm" data-aos="fade-down"
->
-<div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
-  
-
-  <a href="./event_pages/hydro_model.html">
-    <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
-      Hydro-Model
-    </h3>
-  </a>
-
-  <div class="mt-4 flex flex-wrap gap-1">
-    <span
-      class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
-    >
-     Chemistry
-    </span>
-
-     
-  </div>
-</div>
-</article>
-<article
-class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm" data-aos="fade-down"
->
-<div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
-  
-
-  <a href="./event_pages/magical_mania.html">
-    <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
-      Magical Mania
-    </h3>
-  </a>
-
-  <div class="mt-4 flex flex-wrap gap-1">
-    <span
-      class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
-    >
-      Chemistry
-    </span>
-
-     
-  </div>
-</div>
-</article>
-<article
-class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm" data-aos="fade-down"
->
-<div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
-  
-
-  <a href="./event_pages/nature_hunt.html">
-    <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
-      Nature Hunt
-    </h3>
-  </a>
-
-  <div class="mt-4 flex flex-wrap gap-1">
-    <span
-      class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
-    >
-      Biology
-    </span>
-
-     
-  </div>
-</div>
-</article>
-<article
-class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm" data-aos="fade-down"
->
-<div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
-  
-
-  <a href="./event_pages/deadly_Creation.html">
-    <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
-      Deadly Creation
-    </h3>
-  </a>
-
-  <div class="mt-4 flex flex-wrap gap-1">
-    <span
-      class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
-    >
-      Biology
-    </span>
-
-     
-  </div>
-</div>
-</article>
-<article
-class="animate-background rounded-xl  bg-[length:400%_400%] p-0.5 shadow-xl transition [animation-duration:_6s] hover:shadow-sm" data-aos="fade-down"
->
-<div class="rounded-[10px] bg-gray-200 p-4 !pt-12 sm:p-6">
-  
-
-  <a href="./event_pages/infocon.html">
-    <h3 class="  underline underline-offset-4  text-lg font-medium text-gray-900">
-      Infocon
-    </h3>
-  </a>
-
-  <div class="mt-4 flex flex-wrap gap-1">
-    <span
-      class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
-    >
-      Biology
-    </span>
-
-     
-  </div>
-</div>
-</article>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-</section>
-
-<div class="w-screen p-5">
-    <h1 class="text-8xl font-bold text-center">Team.</h1>
-  <div class="grid grid-cols-2 grid-rows">
-    <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right">
-        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/SMN.jpeg">
-        <p class="text-xl font-semibold leading-tight">Shaurya Mittal Nair</p>
-        <p class="text-gray-600">Director</p>
-    </div>
-    <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right">
-        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/Aryan.jpeg">
-        <p class="text-xl font-semibold leading-tight">Aryan Bansal</p>
-        <p class="text-gray-600">Director</p>
-    </div>
-     <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right">
-                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/Shauryaa.jpeg">
-                        <p class="text-xl font-semibold leading-tight">Shauryaa Arora</p>
-                        <p class="text-gray-600">HoD Chemistry</p>
-                    </div>
-                    <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right" >
-                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/Mahir.jpeg">
-                        <p class="text-xl font-semibold leading-tight">Mahir Khanna</p>
-                        <p class="text-gray-600">HoD Biology</p>
-                    </div>
-                    <div class="flex flex-col justify-center m-8 text-center"  data-aos="flip-right">
-                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/Parth.jpeg">
-                        <p class="text-xl font-semibold leading-tight">Parth Mittal</p>
-                        <p class="text-gray-600">HoD Physics</p>
-                    </div>
-                    <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right" >
-                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/Aditya.jpeg">
-                        <p class="text-xl font-semibold leading-tight">Aditya Madan</p>
-                        <p class="text-gray-600">Technology Head</p>
-                    </div>
-                    <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right" >
-                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/Kriti.jpeg">
-                        <p class="text-xl font-semibold leading-tight">Kriti Grover</p>
-                        <p class="text-gray-600">Design Head</p>
-                    </div>
-                    <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right">
-                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/AdityaP.jpeg">
-                        <p class="text-xl font-semibold leading-tight">Aditya Prasad</p>
-                        <p class="text-gray-600">Executive Head</p> 
-                    </div>
-                    </div>
-                    <div class="flex flex-cols-2 justify-center items-center" data-aos="flip-right" >
-                    
-                    <div class="flex flex-col justify-center m-8 text-center" data-aos="flip-right" >
-                        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="./images_Team/Aurum.png">
-                        <p class="text-xl font-semibold leading-tight">Aurum Mandal</p>
-                        <p class="text-gray-600">Management Head</p>
-                    </div>
   </div>
-  <div class="flex min-h-screen items-center justify-start p-5 " id="contact" 
-  data-aos-anchor-placement="center-bottom">
- <div class="mx-auto w-full max-w-lg">
-   <h1 class="text-4xl font-medium">Contact us</h1>
-   <p class="mt-3">Email us at helixdpsr2@gmail.com or message us here:</p>
 
-   <form action="https://api.web3forms.com/submit" method="POST" class="mt-10">
-   
- 
-     <input type="hidden" name="access_key" value="9f285cbd-b151-41d0-8651-6715539a670b" /> 
-     <div class="grid gap-6 sm:grid-cols-2">
-       <div class="relative z-0">
-         <input type="text" name="name" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
-         <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your name</label>
-       </div>
-       <div class="relative z-0">
-         <input type="text" name="email" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
-         <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your email</label>
-       </div>
-       <div class="relative z-0 col-span-2">
-         <textarea name="message" rows="5" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" "></textarea>
-         <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your message</label>
-       </div>
-     </div>
-     <button type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white">Send Message</button>
-   </form>
- </div>
-</div>
 
-                <footer class="  text-gray-900">
- <div class="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row divide-gray-600">
-     <ul class="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
-         &copy; Helix 2023
-     </ul>
-     <div class="flex flex-col justify-center pt-6 lg:pt-0">
-         <div class="flex justify-center space-x-4">
-             <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/helix.dpsr/" title="Instagram" class="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-blue-600 text-gray-50">
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="w-4 h-4">
-                     <path d="M16 0c-4.349 0-4.891 0.021-6.593 0.093-1.709 0.084-2.865 0.349-3.885 0.745-1.052 0.412-1.948 0.959-2.833 1.849-0.891 0.885-1.443 1.781-1.849 2.833-0.396 1.020-0.661 2.176-0.745 3.885-0.077 1.703-0.093 2.244-0.093 6.593s0.021 4.891 0.093 6.593c0.084 1.704 0.349 2.865 0.745 3.885 0.412 1.052 0.959 1.948 1.849 2.833 0.885 0.891 1.781 1.443 2.833 1.849 1.020 0.391 2.181 0.661 3.885 0.745 1.703 0.077 2.244 0.093 6.593 0.093s4.891-0.021 6.593-0.093c1.704-0.084 2.865-0.355 3.885-0.745 1.052-0.412 1.948-0.959 2.833-1.849 0.891-0.885 1.443-1.776 1.849-2.833 0.391-1.020 0.661-2.181 0.745-3.885 0.077-1.703 0.093-2.244 0.093-6.593s-0.021-4.891-0.093-6.593c-0.084-1.704-0.355-2.871-0.745-3.885-0.412-1.052-0.959-1.948-1.849-2.833-0.885-0.891-1.776-1.443-2.833-1.849-1.020-0.396-2.181-0.661-3.885-0.745-1.703-0.077-2.244-0.093-6.593-0.093zM16 2.88c4.271 0 4.781 0.021 6.469 0.093 1.557 0.073 2.405 0.333 2.968 0.553 0.751 0.291 1.276 0.635 1.844 1.197 0.557 0.557 0.901 1.088 1.192 1.839 0.22 0.563 0.48 1.411 0.553 2.968 0.072 1.688 0.093 2.199 0.093 6.469s-0.021 4.781-0.099 6.469c-0.084 1.557-0.344 2.405-0.563 2.968-0.303 0.751-0.641 1.276-1.199 1.844-0.563 0.557-1.099 0.901-1.844 1.192-0.556 0.22-1.416 0.48-2.979 0.553-1.697 0.072-2.197 0.093-6.479 0.093s-4.781-0.021-6.48-0.099c-1.557-0.084-2.416-0.344-2.979-0.563-0.76-0.303-1.281-0.641-1.839-1.199-0.563-0.563-0.921-1.099-1.197-1.844-0.224-0.556-0.48-1.416-0.563-2.979-0.057-1.677-0.084-2.197-0.084-6.459 0-4.26 0.027-4.781 0.084-6.479 0.083-1.563 0.339-2.421 0.563-2.979 0.276-0.761 0.635-1.281 1.197-1.844 0.557-0.557 1.079-0.917 1.839-1.199 0.563-0.219 1.401-0.479 2.964-0.557 1.697-0.061 2.197-0.083 6.473-0.083zM16 7.787c-4.541 0-8.213 3.677-8.213 8.213 0 4.541 3.677 8.213 8.213 8.213 4.541 0 8.213-3.677 8.213-8.213 0-4.541-3.677-8.213-8.213-8.213zM16 21.333c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333c2.948 0 5.333 2.385 5.333 5.333s-2.385 5.333-5.333 5.333zM26.464 7.459c0 1.063-0.865 1.921-1.923 1.921-1.063 0-1.921-0.859-1.921-1.921 0-1.057 0.864-1.917 1.921-1.917s1.923 0.86 1.923 1.917z"></path>
-                 </svg>
-             </a>
-             
-         </div>
-     </div>
- </div>
-</footer>
-</div>
-</div>
-   
-    
 
 
 </body>
 <script>
   AOS.init();
 </script>
+
 </html>
